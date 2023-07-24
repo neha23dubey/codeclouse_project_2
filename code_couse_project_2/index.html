@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>URL Shortener</h1>
+    <p>Enter a long URL below and get a shortened version.</p>
+    <form id="url-form" onsubmit="shortenUrl(); return false;">
+      <input type="text" id="url-input" placeholder="Enter URL">
+      <input type="submit" value="Shorten URL">
+    </form>
+    <div id="shortened-url">
+      <p>Your shortened URL:</p>
+      <input type="text" id="shortened-link" readonly>
+      <button onclick="copyShortenedUrl()">Copy</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 URL Shortener. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
